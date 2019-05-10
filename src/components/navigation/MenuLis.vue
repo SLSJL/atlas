@@ -24,7 +24,7 @@
     </el-dropdown>
 
     <div class="notice-mask" v-if="showNotice">
-      <p>This version does not support smartphone browser, please login in your desktop/labtop computer</p>
+      <p>This version does not support smartphone browser, please login in your desktop/laptop computer</p>
       <el-button type="info" round @click="closeNotice">Close</el-button>
     </div>
   </div>
@@ -51,6 +51,7 @@ export default {
         this.showNotice = true;
       } else {
         // PC端操作
+        window.location.href = "https://google.com.hk";
       }
     },
     closeNotice() {
