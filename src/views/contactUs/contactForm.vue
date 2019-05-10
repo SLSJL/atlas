@@ -126,6 +126,7 @@ export default {
         // outline: none;
         flex: 1;
         text-indent: 0.5em;
+        font-size: 1.4rem;
       }
       input:invalid {
         outline: red;
@@ -144,6 +145,7 @@ export default {
       max-height: 240px;
       resize: none;
       border: 1px solid #ddd;
+      font-size: 1.4rem;
     }
   }
 
@@ -155,6 +157,7 @@ export default {
     p {
       span {
         margin-right: 30px;
+        font-size: 1.4rem;
       }
       a {
         text-decoration: none;
@@ -169,6 +172,7 @@ export default {
       cursor: pointer;
       outline: none;
       font-size: 1.4rem;
+      font-weight: 600;
     }
     button:hover {
       background-color: #517bd8;
@@ -251,6 +255,7 @@ export default {
         cursor: pointer;
         outline: none;
         font-size: 1.4rem;
+        font-weight: 600;
       }
       button:hover {
         background-color: #517bd8;
