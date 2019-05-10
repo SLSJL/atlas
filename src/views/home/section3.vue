@@ -120,6 +120,7 @@ export default {
       width: 120px;
       height: 140px;
       .img-wrapper {
+        margin: 0 auto;
         width: 80px;
         height: 80px;
         border-radius: 60px;
