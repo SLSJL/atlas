@@ -175,26 +175,29 @@ export default {
     .sec-2-content {
       position: relative;
       .sec-2-caption {
-        position: relative;
-
-        width: 100%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+
+        z-index: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
         background-color: rgba(0, 0, 0, 0.5);
 
         span {
           position: absolute;
           left: 50%;
-          top: 10%;
+          top: 15%;
           font-size: 3rem;
 
-          -webkit-transform: translate(-75%, 0);
-          -moz-transform: translate(-75%, 0);
-          -o-transform: translate(-75%, 0);
-          transform: translate(-75%, 0);
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
           hr {
             display: inline-block;
             margin: 0;
@@ -211,16 +214,12 @@ export default {
       }
 
       .sec-2-content__wrap {
+        z-index: 600;
         position: absolute;
+        top: 0;
+        left: 0;
         width: 100% !important;
-        left: 45%;
-        top: 5%;
-        color: #fff;
-
-        -webkit-transform: translate(-40%, 0);
-        -moz-transform: translate(-40%, 0);
-        -o-transform: translate(-40%, 0);
-        transform: translate(-40%, 0);
+        height: 100%;
 
         .content-items {
           flex: none;
@@ -228,14 +227,18 @@ export default {
           justify-content: center;
           align-items: center;
           transform: translate(0, 55%);
+          width: 100% !important;
+
           ul {
-            margin-top: 1.5rem;
             li {
-              margin: 1.5rem;
+              margin: 1.5rem 0;
+              margin-left: 4.5rem;
+              max-width: 24  rem; 
+              line-height: 1.8rem;
+              color: #fff;
               text-align: left;
               list-style: disc;
               font-size: 1.4rem;
-              line-height: 1.8rem;
             }
           }
         }
