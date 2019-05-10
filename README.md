@@ -1,6 +1,6 @@
 # Atlas website
 
-This is the project website of the Atals.
+This is the project website of the Atlas.
 
 ## Project setup
 ```
