@@ -41,16 +41,16 @@
           <span>
             Email:
             <a href="mailto:atlas@polyu.edu.hk">atlas@polyu.edu.hk</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;Tel: 852-27664655
           </span>
-          <span>Tel: 825-27664655</span>
         </p>
         <p>
           <span>
             <a
               href="mailto:atlas@polyu.edu.hk"
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lswong@polyu.edu.hk</a>
+            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lswong@polyu.edu.hk</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;852-34008959
           </span>
-          <span>&nbsp;&nbsp;852-34008959</span>
         </p>
       </div>
 

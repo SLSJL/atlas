@@ -8,7 +8,7 @@
         @click="navigate(item.route, idx)"
       >{{item.text}}</li>
     </ul>
-    <a href="##" class="teacher-login">Teacher login</a>
+    <a href="##" class="teacher-login" @click="goTo">Teacher login</a>
 
     <el-dropdown size="medium" class="menu-tab" @command="navigate">
       <span class="el-dropdown-link">
@@ -22,6 +22,11 @@
         >{{item.text}}</el-dropdown-item>
       </el-dropdown-menu>
     </el-dropdown>
+
+    <div class="notice-mask" v-if="showNotice">
+      <p>This version does not support smartphone browser, please login in your desktop/labtop computer</p>
+      <el-button type="info"  round @click="closeNotice">Close</el-button>
+    </div>
   </div>
 </template>
 <script>
@@ -29,11 +34,27 @@ import { mapState, mapMutations } from "vuex";
 
 export default {
   components: {},
+  data() {
+    return {
+      showNotice: false
+    };
+  },
   methods: {
     ...mapMutations("navigation", ["SET_ACTIVEINDEX"]),
     navigate(route, idx) {
       if (idx) this.SET_ACTIVEINDEX(idx);
       this.$router.push({ path: route });
+    },
+    goTo() {
+      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        // 移动端操作
+        this.showNotice = true;
+      } else {
+        // PC端操作
+      }
+    },
+    closeNotice() {
+      this.showNotice = false;
     }
   },
   computed: {
@@ -130,6 +151,28 @@ export default {
     li:hover::before {
       width: 100%;
       margin-left: 0;
+    }
+  }
+
+  .notice-mask {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    p {
+      padding: 0 30px;
+      font-size: 1.4rem;
+      line-height: 3.6rem;
+      font-weight: 600;
     }
   }
 }

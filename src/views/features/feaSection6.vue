@@ -7,7 +7,7 @@
     <p>
       More features will be coming soon! Try
       <b>ATLAS</b> now. Find
-      <b>ATLAS for student</b> in
+      <b>ATLAS for student</b> on
     </p>
     <p>
       <a href="https://itunes.apple.com/hk/app/atlas-for-student/id1450907363?mt=8">
@@ -72,6 +72,7 @@ export default {
     text-align: left;
     font-size: 24px;
     text-align: right;
+    color: #303030;
 
     img {
       margin-left: 30px;
