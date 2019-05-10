@@ -54,9 +54,7 @@
         </p>
       </div>
 
-      <button @click="saveMsg">
-        Submit
-      </button>
+      <button @click="saveMsg">Submit</button>
     </div>
   </div>
 </template>
@@ -121,6 +119,7 @@ export default {
         color: #fff;
         border-radius: 30px;
         margin-right: 30px;
+        font-size: 1.4rem;
       }
 
       input {
@@ -169,6 +168,7 @@ export default {
       border-radius: 30px;
       cursor: pointer;
       outline: none;
+      font-size: 1.4rem;
     }
     button:hover {
       background-color: #517bd8;
@@ -300,7 +300,7 @@ export default {
       textarea {
         margin: 0.5rem 0;
         padding: 1.5rem;
-        height: 1.4rem;
+        height: 10rem;
         border: 1px solid #ddd;
         border-radius: 0.4rem;
 

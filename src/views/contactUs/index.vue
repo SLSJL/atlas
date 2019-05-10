@@ -32,6 +32,10 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  .contact-form {
+    flex: 1;
+  }
 }
 
 @media only screen and (min-width: 48em) and (max-width: 75em) {

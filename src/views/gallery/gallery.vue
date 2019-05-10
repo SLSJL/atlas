@@ -226,14 +226,7 @@ export default {
   }
 }
 .gallery-mobile {
-  display: flex;
-  justify-content: flex-start;
-  padding: 0 3rem;
-  img {
-    margin: 1.5rem 0;
-    width: 100%;
-    height: auto;
-  }
+  display: none;
 }
 
 @media only screen and (min-width: 48em) and (max-width: 75em) {
