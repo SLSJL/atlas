@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: "/atlas/",
+  publicPath: "/atlas/dist/",
   // webpack-dev-server 相关配置
   devServer: {
     open: process.platform === "darwin",
