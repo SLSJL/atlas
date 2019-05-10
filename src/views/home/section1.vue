@@ -84,6 +84,7 @@ export default {
 <style lang="less" scoped>
 .senction-1 {
   width: 100%;
+  overflow: auto;
   background-color: #314a7f;
 
   .section-wrap {

@@ -44,7 +44,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden;
 
   .sec-1 {
     width: 100%;
