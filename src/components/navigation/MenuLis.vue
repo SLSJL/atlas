@@ -8,7 +8,7 @@
         @click="navigate(item.route, idx)"
       >{{item.text}}</li>
     </ul>
-    <a href="##" class="teacher-login" @click="goTo">Teacher login</a>
+    <button class="teacher-login" @click="goTo">Teacher login</button>
 
     <el-dropdown size="medium" class="menu-tab" @command="navigate">
       <span class="el-dropdown-link">
@@ -25,7 +25,7 @@
 
     <div class="notice-mask" v-if="showNotice">
       <p>This version does not support smartphone browser, please login in your desktop/labtop computer</p>
-      <el-button type="info"  round @click="closeNotice">Close</el-button>
+      <el-button type="info" round @click="closeNotice">Close</el-button>
     </div>
   </div>
 </template>
