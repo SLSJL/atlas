@@ -1,6 +1,6 @@
 <template>
   <div class="contianer-fluid wooter">
-    <p>Copyright © 2019. Remote Sensing Laboratory,</p>
+    <p>Copyright © 2019. Remote Sensing Laboratory, ZB213, Z core</p>
     <p>Department of Land Surveying and Geo-Informatics,</p>
     <p>The Hong Kong Polytechnic University. All rights reserved.</p>
   </div>
@@ -21,7 +21,6 @@ export default {};
 
   background-color: #314a7f;
   p {
-    
     width: 120rem;
     margin: 0.5rem 0;
     font-size: 1.4rem;
