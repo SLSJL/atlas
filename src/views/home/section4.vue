@@ -6,10 +6,10 @@
       </div>
 
       <div class="sec-4-caption">
-        <span>
-          {{$t('message.home.section4.caption')}}
+        <div class="sec2-caption-wrap">
+          <span v-html="$t('message.home.section4.caption')"></span>
           <hr>
-        </span>
+        </div>
       </div>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
       justify-content: center;
       align-items: center;
       line-height: 24px;
-      span {
+      .sec2-caption-wrap {
         hr {
           display: inline-block;
           margin: 0;
@@ -109,7 +109,7 @@ export default {
     width: 100%;
     height: 100%;
 
-    span {
+    .sec2-caption-wrap {
       position: absolute !important;
       top: 20%;
       right: 15%;
@@ -156,7 +156,7 @@ export default {
     width: 100% !important;
     height: 100%;
 
-    span {
+    .sec2-caption-wrap {
       position: absolute !important;
       top: 15%;
       left: 50%;

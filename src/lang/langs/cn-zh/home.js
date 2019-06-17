@@ -43,7 +43,7 @@ export default {
     ]
   },
   section4: {
-    caption: "技术",
+    caption: "技&nbsp;&nbsp;术",
     introdtuctin: "ATLAS使用iBeacon技术，<br>通过蓝牙追踪学生在教室中精确的位置。"
   },
   section5: {
