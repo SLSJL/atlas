@@ -42,7 +42,7 @@ export default {
   methods: {
     ...mapMutations("navigation", ["SET_ACTIVEINDEX"]),
     navigate(route, idx) {
-      if (idx) this.SET_ACTIVEINDEX(idx);
+      if (idx || idx == 0) this.SET_ACTIVEINDEX(idx);
       this.$router.push({ path: route });
     },
     goTo() {
