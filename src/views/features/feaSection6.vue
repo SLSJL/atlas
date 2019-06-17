@@ -1,14 +1,10 @@
 <template>
   <div class="contianer-fluid fsenction-6">
     <h1>
-      <span>...And More!</span>
+      <span>{{$t('message.feature.section6.caption')}}</span>
       <hr>
     </h1>
-    <p>
-      More features will be coming soon! Try
-      <b>ATLAS</b> now. Find
-      <b>ATLAS for student</b> on
-    </p>
+    <p v-html="$t('message.feature.section6.content')"></p>
     <p>
       <a href="https://itunes.apple.com/hk/app/atlas-for-student/id1450907363?mt=8">
         <img :src="require('./../../assets/images/features/AppStore8@4x.png')" alt>

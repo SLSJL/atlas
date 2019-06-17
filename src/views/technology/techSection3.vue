@@ -6,8 +6,8 @@
     <div class="sec-3-content__wrap">
       <div class="triangle-right-top"></div>
       <div class="content-box">
-        <h1>Three Methods of Localization</h1>
-        <p>Trilateration, fingerprint, and proximity technologies are combined to generate an accurate location of each student in the classroom.</p>
+        <h1>{{$t('message.technology.section3.caption')}}</h1>
+        <p>{{$t('message.technology.section3.content')}}</p>
       </div>
     </div>
   </div>

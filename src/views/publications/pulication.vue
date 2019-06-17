@@ -3,7 +3,7 @@
   <div class="contianer-fluid publication-section-1">
     <div class="pub-item">
       <div>
-        <h4>Gauging the Student Learning Experience of a Mobile Application Using iBeacon Technology</h4>
+        <h1>Gauging the Student Learning Experience of a Mobile Application Using iBeacon Technology</h1>
         <p>(AHFE 2018 Conference Paper)</p>
       </div>
       <img class="pub-cover" :src="require('./../../assets/images/publications/Publication1.png')">
@@ -11,7 +11,7 @@
 
     <div class="pub-item">
       <div>
-        <h4>Development of Location-based Driven Application for Innovative and Technology-assisted Teaching and Learning Practices</h4>
+        <h1>Development of Location-based Driven Application for Innovative and Technology-assisted Teaching and Learning Practices</h1>
         <p>(eLearning Forum Asia 2018 Conference Paper)</p>
       </div>
 
@@ -19,7 +19,7 @@
     </div>
     <div class="pub-item">
       <div>
-        <h4>The Big Data Revolution in Learning and Teaching: Creating New Educational Experiences and Facilitating the Smart Campus (Presentation in May 2018, EdUHK Festival 2018)</h4>
+        <h1>The Big Data Revolution in Learning and Teaching: Creating New Educational Experiences and Facilitating the Smart Campus (Presentation in May 2018, EdUHK Festival 2018)</h1>
         <p>Using iBeacon Technology for Underground and Indoor Positioning (Conference Paper ACUU)</p>
       </div>
 
@@ -59,13 +59,13 @@ export default {
     }
     div {
       flex: 1;
-      h4 {
+      h1 {
         box-sizing: border-box;
         padding: 60px 30px;
         margin: 0;
         width: 100%;
         text-align: left;
-        // background-color: #314a7f;
+        line-height: 2.4rem;
         color: #314a7f;
       }
 

@@ -2,16 +2,12 @@
   <div class="contianer-fluid senction-4">
     <div class="sec-4-content">
       <div class="sec-4-content__wrap">
-        <div class="text-wrap">
-          ATLAS uses iBeacon technology to track
-          <br>students’ precise locations in a
-          <br>classroom setting through Bluetooth.
-        </div>
+        <div class="text-wrap" v-html="$t('message.home.section4.introdtuctin')"></div>
       </div>
 
       <div class="sec-4-caption">
         <span>
-          Technology
+          {{$t('message.home.section4.caption')}}
           <hr>
         </span>
       </div>
@@ -99,7 +95,7 @@ export default {
     border: 0 !important;
     .text-wrap {
       margin-top: 0 !important;
-      padding: 0 15%;
+      padding: 0 10%;
       color: #fff;
       box-sizing: border-box;
       font-size: 1.4rem;

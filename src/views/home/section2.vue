@@ -2,20 +2,16 @@
   <div class="contianer-fluid senction-2">
     <div class="sec-2-content">
       <div class="sec-2-caption">
-        <span>
-          <hr>Objectives
-        </span>
+        <div class="sec2-caption-wrap">
+          <hr>
+          <span v-html="$t('message.home.section2.caption')"></span>
+        </div>
       </div>
 
       <div class="sec-2-content__wrap triangle-right-bottom">
         <div class="content-items">
           <ul>
-            <li>Make campuses smarter</li>
-            <li>Promote BYOD in class</li>
-            <li>Increase interactivity in classrooms</li>
-            <li>Encourage adaptive learning</li>
-            <li>Track on students’ performance precisely</li>
-            <li>Record students’ attendance easily</li>
+            <li v-for="( item, idx) in $t('message.home.section2.list')" :key="idx">{{item}}</li>
           </ul>
         </div>
       </div>
@@ -36,7 +32,7 @@ export default {
   background-color: #eee;
 
   background-image: url("./../../assets/images/home/Objectives.jpg");
-  background-size: 65%;
+  background-size: auto 100%;
 
   .sec-2-content {
     width: 100%;
@@ -51,8 +47,8 @@ export default {
       justify-content: center;
       align-items: center;
 
-      span {
-        // margin-top: -100px;
+      .sec2-caption-wrap {
+        margin-top: -100px;
         hr {
           display: inline-block;
           margin: 0;
@@ -120,10 +116,13 @@ export default {
 
         background-color: rgba(0, 0, 0, 0.5);
 
-        span {
+        .sec2-caption-wrap {
           position: absolute;
           left: 15rem;
           top: 4rem;
+          margin-top: 0;
+
+          width: auto;
           font-size: 3rem;
 
           hr {
@@ -188,10 +187,12 @@ export default {
 
         background-color: rgba(0, 0, 0, 0.5);
 
-        span {
+        .sec2-caption-wrap {
           position: absolute;
           left: 50%;
           top: 15%;
+          margin-top: 0;
+
           font-size: 3rem;
 
           -webkit-transform: translate(-50%, -50%);
@@ -231,13 +232,13 @@ export default {
 
           ul {
             li {
-              margin: 1.5rem 0;
-              margin-left: 4.5rem;
-              max-width: 24  rem; 
+              margin: 2rem 0;
+              margin-left: 0;
+              max-width: 30rem;
               line-height: 1.8rem;
               color: #fff;
-              text-align: left;
-              list-style: disc;
+              text-align: center;
+              list-style: none;
               font-size: 1.4rem;
             }
           }

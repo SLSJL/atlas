@@ -2,8 +2,8 @@
   <div class="contianer-fluid tech-senction-2">
     <div class="sec-2-content__wrap">
       <div class="content-box">
-        <h1>iBeacon Technology</h1>
-        <p>Based on Bluetooth Low Energy proximity sensing, iBeacon transmits a unique identifier(UID) to the app on smartphones. This determines the exact location of the device, and hence the student.</p>
+        <h1>{{$t('message.technology.section2.caption')}}</h1>
+        <p v-html="$t('message.technology.section2.content')"></p>
       </div>
       <div class="lyr pattern"></div>
     </div>

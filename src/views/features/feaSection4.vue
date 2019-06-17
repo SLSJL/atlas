@@ -1,8 +1,8 @@
 <template>
   <div class="contianer-fluid fea-senction-4">
     <div class="sec-4-content__wrap">
-      <h1>Test</h1>
-      <p>Tests with multiple choice and short questions designed by teachers are supported. They are made accessible to students only when students are in the particular classroom at the scheduled time. Access is prohibited if quitting the app after starting the test.</p>
+      <h1>{{$t('message.feature.section4.caption')}}</h1>
+      <p  v-html="$t('message.feature.section4.content')"></p>
     </div>
 
     <div class="sec-4-caption">

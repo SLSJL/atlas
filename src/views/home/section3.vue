@@ -1,18 +1,18 @@
 <template>
   <div class="contianer-fluid senction-3">
     <h1 class="sec-3-caption">
-      Features
+      <span v-html="$t('message.home.section3.caption')"></span>
       <hr>
     </h1>
-    <p class="body-text">
-      From taking attendance to evaluating students’ performance,
-      <br>ATLAS facilitates teaching and learning in a fun, efficient and systematic manner.
-      <br>
-      <!-- <button class=""></button> -->
-      <router-link class="learn-more" :to="'/features'" tag="button">Learn more</router-link>
-    </p>
+    <p class="body-text" v-html="$t('message.home.section3.introdtuctin')"></p>
+    <router-link
+      class="learn-more"
+      :to="'/features'"
+      tag="button"
+    >{{$t('message.home.section3.learnMore')}}</router-link>
+
     <ul class="feature-group">
-      <li v-for="(item,idx) in feattures" :key="idx">
+      <li v-for="(item,idx) in $t('message.home.section3.features')" :key="idx">
         <div class="img-wrapper">
           <img class="feature-icon" :src="item.iconPath">
         </div>
@@ -90,24 +90,22 @@ export default {
   }
 
   p.body-text {
-    margin-bottom: 60px;
-    font-size: 20px;
+    margin-bottom: 4rem;
+    font-size: 2.4rem;
     line-height: 36px;
     color: #314a7f;
     font-weight: 600;
-
-    button {
-      margin-top: 30px;
-      padding: 10px 30px;
-      background-color: #314a7f;
-      color: #fff;
-      font-size: 1.8rem;
-      border-radius: 30px;
-      outline: none;
-      cursor: pointer;
-    }
   }
-
+  button {
+    margin-top: 30px;
+    padding: 10px 30px;
+    background-color: #314a7f;
+    color: #fff;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    outline: none;
+    cursor: pointer;
+  }
   ul {
     margin-top: 15px;
     width: 100%;
@@ -150,15 +148,15 @@ export default {
 
 @media only screen and (min-width: 48em) and (max-width: 75em) {
   .senction-3 {
-    height: 600px !important;
+    height: 700px !important;
     background-size: auto 100%;
   }
   p.body-text {
     margin-bottom: 3rem !important;
     padding: 0 15px;
-    button {
-      font-size: 1.4rem;
-    }
+  }
+  button {
+    font-size: 1.4rem;
   }
 }
 
@@ -173,16 +171,15 @@ export default {
     font-size: 1.4rem !important;
     line-height: 3.2rem !important;
 
-    br{
+    br {
       display: none;
     }
-    button {
-      margin: 0 auto;
-      display: block;
-      font-size: 1.4rem;
-    }
   }
-
+  button {
+    margin: 0 auto;
+    display: block;
+    font-size: 1.4rem;
+  }
   ul {
     width: 80% !important;
     display: block !important;

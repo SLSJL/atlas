@@ -1,12 +1,8 @@
 <template>
   <div class="contianer-fluid fea-senction-2">
     <div class="sec-2-content__wrap">
-      <h1>Automatic Attendance Recording</h1>
-      <p>
-        iBeacon tracks individual students’ attendance once they step into the classroom with their smartphones
-        <br>
-        <br>– no extra effort needed for quick and accurate records.
-      </p>
+      <h1>{{$t('message.feature.section2.caption')}}</h1>
+      <p v-html="$t('message.feature.section2.content')"></p>
     </div>
 
     <div class="sec-2-caption">

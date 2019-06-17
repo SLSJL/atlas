@@ -1,10 +1,10 @@
 <template>
   <div class="contianer-fluid senction-5">
-    <h1 class="sec-3-caption">Leading University</h1>
+    <h1 class="sec-3-caption">{{$t('message.home.section5.leading')}}</h1>
     <p class="body-text">
       <img :src="require('./../../assets/images/home/PolyU.png')" alt>
     </p>
-    <h1 class="sec-3-caption">Collaborating Universities</h1>
+    <h1 class="sec-3-caption">{{$t('message.home.section5.collaborating')}}</h1>
     <p class="body-text">
       <img :src="require('./../../assets/images/home/BU.png')" alt>
       <img :src="require('./../../assets/images/home/HKU.png')" alt>

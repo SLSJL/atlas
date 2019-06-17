@@ -2,10 +2,10 @@
 <template>
   <div class="contianer-fluid tech-section-1">
     <h1 class="sec-3-caption">
-      Widely Supported
+      {{$t('message.technology.section4.caption')}}
       <hr>
     </h1>
-    <p class="body-text">ATLAS is supported by iOS7+ and Android 4.3+.</p>
+    <p class="body-text">{{$t('message.technology.section4.content')}}</p>
   </div>
 </template>
 <script>

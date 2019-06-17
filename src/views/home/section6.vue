@@ -1,12 +1,9 @@
 <template>
   <div class="contianer-fluid senction-6">
-    <h1 class="sec-6-caption">Acknowledgement</h1>
+    <h1 class="sec-6-caption">{{$t('message.home.section6.caption')}}</h1>
     <div class="body-text">
-      <h5>This project is supported by</h5>
-      <!-- <p>“New Mobile Learning Scenarios Enabler - Development of Location-based Driven Application for Innovative and Technology-assisted Teaching and Learning Using iBeacon Technology” from the eLearning and Blended Learning Development Fund 2014-17;</p>
-      <p>“Using iBeacon Technology for Engaging Learning Experiences in Larger Scale in Campus” from the Faculty of Construction and Environment, the Hong Kong Polytechnic University, Hong Kong;</p>-->
-      <p>“Augmenting Physical Learning Spaces with Location-based Services Using iBeacon Technology for Engaging Learning Experiences”, UGC Funding Scheme for Teaching and Learning Related Proposals (2016-19 Triennium), University Grants Committee, Hong Kong.</p>
-      <!-- • -->
+      <h5>{{$t('message.home.section6.p1')}}</h5>
+      <p>{{$t('message.home.section6.p2')}}</p>
     </div>
   </div>
 </template>

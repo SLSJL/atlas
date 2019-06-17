@@ -1,15 +1,10 @@
 <template>
   <div class="contianer-fluid fea-section-1">
     <h1 class="sec-3-caption">
-      Features
+      <span v-html="$t('message.feature.section1.caption')"></span>
       <hr>
     </h1>
-    <p class="body-text">
-      From taking attendance to evaluating students’ performance,
-      <br>ATLAS facilitates teaching and learning in a fun, efficient, and systematic manner.
-      <br>It can be applied to various classroom situations
-      <br>depending on teachers’ own needs and preferences.
-    </p>
+    <p class="body-text" v-html="$t('message.feature.section1.content')"></p>
   </div>
 </template>
 <script>
@@ -49,7 +44,7 @@ export default {
     font-size: 48px;
     font-weight: bolder;
     color: #314a7f;
-    
+
     hr {
       display: inline-block;
       margin: 0;

@@ -5,12 +5,8 @@
     </div>
 
     <div class="sec-3-content__wrap">
-      <h1>Virtual Hands Up</h1>
-      <p>
-        No chaos –
-        <br>
-        <br>Teachers get notified immediately with the exact seat of students when they “put their hands up” using a button, perfect for responding to individual student's questions or doing a survey in a lecture hall.
-      </p>
+      <h1>{{$t('message.feature.section3.caption')}}</h1>
+      <p v-html="$t('message.feature.section3.content')"></p>
     </div>
   </div>
 </template>

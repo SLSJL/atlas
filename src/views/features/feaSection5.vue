@@ -4,8 +4,8 @@
       <img :src="require('./../../assets/images/features/VRAR.png')" alt>
     </div>
     <div class="sec-5-content__wrap">
-      <h1>AR and VR-supported</h1>
-      <p>ATLAS supports the use of augmented reality and virtual reality in learning materials. Teachers can also upload other documents for students to access in class.</p>
+      <h1>{{$t('message.feature.section5.caption')}}</h1>
+      <p>{{$t('message.feature.section5.content')}}</p>
     </div>
   </div>
 </template>

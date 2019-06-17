@@ -2,13 +2,10 @@
 <template>
   <div class="contianer-fluid tech-section-1">
     <h1 class="sec-1-caption">
-      Technology
+      <span v-html="$t('message.technology.section1.caption')"></span>
       <hr>
     </h1>
-    <p class="body-text">
-      ATLAS uses iBeacon technology to track students’ precise locations in a classroom,
-      <br>working together with app on smartphones.
-    </p>
+    <p class="body-text" v-html="$t('message.technology.section1.content')"></p>
   </div>
 </template>
 <script>
@@ -112,7 +109,7 @@ export default {
   .tech-section-1 {
     background-size: auto 150%;
 
-     p.body-text {
+    p.body-text {
       padding: 0 6rem;
       font-size: 1.8rem;
       br {

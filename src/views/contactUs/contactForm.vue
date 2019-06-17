@@ -3,45 +3,51 @@
   <div class="contianer-fluid contaict-section-1">
     <form>
       <div class="form-line">
-        <label for="name" class="input-name">Name</label>
+        <label for="name" class="input-name">{{$t('message.aboutus.line1.fieldName')}}</label>
         <input
           name="name"
           type="text"
           v-model="subParams.name"
-          placeholder="Please input your name"
+          :placeholder="$t('message.aboutus.line1.placeholder')"
         >
       </div>
       <div class="form-line">
-        <label for="email" class="input-name">E-mail</label>
+        <label for="email" class="input-name">{{$t('message.aboutus.line2.fieldName')}}</label>
         <input
           name="email"
           type="text"
           pattern="^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$"
           v-model="subParams.email"
-          placeholder="Please input your email address"
+          :placeholder="$t('message.aboutus.line2.placeholder')"
         >
       </div>
       <div class="form-line">
-        <label for="subject" class="input-name">Subject</label>
+        <label for="subject" class="input-name">{{$t('message.aboutus.line3.fieldName')}}</label>
         <input
           name="subject"
           type="text"
           v-model="subParams.subject"
-          placeholder="Please input your subject"
+          :placeholder="$t('message.aboutus.line3.placeholder')"
         >
       </div>
       <div class="form-line message">
         <!-- <label for="message" class="input-name">Message</label> -->
-        <textarea name="message" v-model="subParams.message" placeholder="Please input more detail"></textarea>
+        <textarea
+          name="message"
+          v-model="subParams.message"
+          :placeholder="$t('message.aboutus.line4.placeholder')"
+        ></textarea>
       </div>
     </form>
     <div class="contact-msg">
       <div class="mail-tel">
         <p>
           <span>
-            Email:
-            <a href="mailto:atlas@polyu.edu.hk">atlas@polyu.edu.hk</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;Tel: 852-27664655
+            {{$t('message.aboutus.line5')[0]}}:
+            <a
+              href="mailto:atlas@polyu.edu.hk"
+            >atlas@polyu.edu.hk</a>
+            &nbsp;&nbsp;&nbsp;&nbsp;{{$t('message.aboutus.line5')[1]}}: 852-27664655
           </span>
         </p>
         <p>
@@ -54,7 +60,7 @@
         </p>
       </div>
 
-      <button @click="saveMsg">Submit</button>
+      <button @click="saveMsg">{{$t('message.aboutus.line5')[2]}}</button>
     </div>
   </div>
 </template>
