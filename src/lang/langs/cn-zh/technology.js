@@ -2,7 +2,7 @@ export default {
   section1: {
     caption: "技&nbsp;&nbsp;术",
     content:
-      "ATLAS使用iBeacon技术及智能电话应用程序，通过蓝牙追踪学生在教室中精确的位置。"
+      "ATLAS利用iBeacon技术，通过蓝牙讯号准确追踪学生在课室中的位置。"
   },
   section2: {
     caption: "iBeacon技术",
@@ -12,10 +12,10 @@ export default {
   section3: {
     caption: "三种定位方法",
     content:
-      "结合三边量测法、指纹和距离技术三种定位方法，测算出每个学生在课室中的准确位置。"
+      "结合三边定位法、指纹定位法和邻近探测法三种定位技术，找出每个学生在课室中的准确位置。"
   },
   section4: {
     caption: "广泛支持",
-    content: "ATLAS 支持 iOS7.0以上及 Android 4.3以上版本的智能电话。"
+    content: "ATLAS 支援 iOS7.0以上及 Android 4.3以上版本的智能电话。"
   }
 };

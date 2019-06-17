@@ -1,6 +1,6 @@
 <template>
   <div class="contianer-fluid wooter">
-    <p>Copyright © 2019. Remote Sensing Laboratory, ZB213, Z core</p>
+    <p>Copyright © 2019. Remote Sensing Laboratory, ZB213, Block Z</p>
     <p>Department of Land Surveying and Geo-Informatics,</p>
     <p>The Hong Kong Polytechnic University. All rights reserved.</p>
   </div>
