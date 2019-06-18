@@ -2,12 +2,12 @@ export default {
   section1: {
     caption: "技&nbsp;&nbsp;術",
     content:
-      "ATLAS利用iBeacon技術，通過藍牙訊號準確追蹤學生在課室中的位置。"
+      "ATLAS 利用 iBeacon 技術，通過藍牙訊號準確追蹤學生在課室中的位置。"
   },
   section2: {
-    caption: "iBeacon技術",
+    caption: "iBeacon 技術",
     content:
-      "iBeacon利用藍牙低功耗距離感測，發送唯一識別碼(UID)學生手機中的ATLAS應用程式，取得該電子設備及其學生的確切位置。"
+      "iBeacon利用藍牙低功耗距離感測，發送唯一識別碼 (UID) 學生手機中的 ATLAS 應用程式，取得該電子設備及其學生的確切位置。"
   },
   section3: {
     caption: "三種定位方法",
@@ -16,6 +16,6 @@ export default {
   },
   section4: {
     caption: "廣泛支援",
-    content: "ATLAS 支援 iOS7.0以上及 Android 4.3以上版本的智能電話。"
+    content: "ATLAS 支援 iOS7.0以上及 Android 4.3 以上版本的智能電話。"
   }
 };

@@ -1,6 +1,6 @@
 const state = {
   activeIndex: 0,
-  languageIndex: 0,
+  language: "en",
   menuItems: [
     {
       text: "Home",
@@ -34,7 +34,7 @@ const mutations = {
     state.activeIndex = activeIndex;
   },
   SET_ACTIVE_LANGUAGE(state, activeLanguageIdx) {
-    state.languageIndex = activeLanguageIdx;
+    state.language = activeLanguageIdx;
   }
 };
 

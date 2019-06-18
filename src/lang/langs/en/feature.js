@@ -25,8 +25,8 @@ export default {
       "ATLAS supports the use of augmented reality and virtual reality in learning materials. Teachers can also upload other documents for students to access in class."
   },
   section6: {
-    caption: "...And",
+    caption: "...And More! ",
     content:
-      "More! More features will be coming soon! Try <b>ATLAS</b> now. Find <b>ATLAS for student</b> in"
+      "More features will be coming soon! Try <b>ATLAS</b> now. Find <b>ATLAS for student</b> in"
   }
 };

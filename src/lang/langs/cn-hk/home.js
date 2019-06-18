@@ -45,7 +45,7 @@ export default {
   section4: {
     caption: "技&nbsp;&nbsp;術",
     introdtuctin:
-      "-	ATLAS利用iBeacon技術，<br> 透過藍牙訊號準確追蹤學生在課室中的位置。"
+      "ATLAS 利用 iBeacon 技術，<br> 透過藍牙訊號準確追蹤學生在課室中的位置。"
   },
   section5: {
     leading: "主要負責大學",
@@ -54,6 +54,6 @@ export default {
   section6: {
     caption: "鳴謝",
     p1: "",
-    p2: "本計劃獲得香港大學教育¬資助委員會轄下教與學資助計劃(2016-19 三年期) 的支持。"
+    p2: "本計劃獲得香港大學教育¬資助委員會轄下教與學資助計劃 (2016-19 三年期) 的支持。"
   }
 };
