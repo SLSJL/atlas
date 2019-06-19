@@ -24,28 +24,13 @@
     </el-dropdown>
 
     <!-- language swich -->
-    <!-- <el-dropdown size="medium" class="language-selector" trigger="click" @command="changeLang">
-      <el-tooltip class="item" effect="dark" :content="$t('message.nav.languageTooltip')" placement="top">
-        <span class="el-dropdown-link">
-          <i class="iconfont icon-yuyan"></i>
-          &nbsp;{{language}}
-        </span>
-      </el-tooltip>
-
-      <el-dropdown-menu class="menu-tab-list" slot="dropdown">
-        <el-dropdown-item command="en">English</el-dropdown-item>
-        <el-dropdown-item command="cnt">繁體中文</el-dropdown-item>
-        <el-dropdown-item command="cns">简体中文</el-dropdown-item>
-      </el-dropdown-menu>
-    </el-dropdown>-->
-
     <div class="language-selector">
-      <span v-if="language !=='en'" @click="changeLang('en')">Eng</span>
+      <span class="language-item" v-if="language !=='en'" @click="changeLang('en')">Eng</span>
       <span v-if="language !== 'cnt' && language !== 'en'">/</span>
       <span v-if="language === 'cnt'">/</span>
-      <span v-if="language !=='cnt'" @click="changeLang('cnt')">繁</span>
+      <span class="language-item" v-if="language !=='cnt'" @click="changeLang('cnt')">繁</span>
       <span v-if="language !== 'cnt' && language !== 'cns'">/</span>
-      <span v-if="language !=='cns'" @click="changeLang('cns')">简</span>
+      <span class="language-item" v-if="language !=='cns'" @click="changeLang('cns')">简</span>
     </div>
 
     <!-- teacher login -->
@@ -114,7 +99,7 @@ export default {
       padding: 0.2rem;
       cursor: pointer;
     }
-    span:hover {
+    span.language-item:hover {
       color: #fed400;
     }
   }

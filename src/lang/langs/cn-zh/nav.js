@@ -17,7 +17,7 @@ export default {
       route: "/gallery"
     },
     {
-      text: "出版",
+      text: "刊物",
       route: "/publications"
     },
     {

@@ -5,8 +5,8 @@ export default {
       "推行智能校园",
       "鼓励在课堂上自携电子设备",
       "促进课堂互动",
-      "鼓励适性化学习",
-      "准确追踪学生的学习表现",
+      "鼓励适应性学习",
+      "准确跟进学生的学习表现",
       "轻松记录学生出席率"
     ]
   },
@@ -33,7 +33,7 @@ export default {
         iconPath: require("./../../../assets/images/home/feature/f4@4x.png")
       },
       {
-        text: "数据视觉呈现",
+        text: "数据可视化",
         iconPath: require("./../../../assets/images/home/feature/f5@4x.png")
       },
       {
@@ -45,7 +45,7 @@ export default {
   section4: {
     caption: "技&nbsp;&nbsp;术",
     introdtuctin:
-      "ATLAS 利用 iBeacon 技术，通过蓝牙讯号准确追踪学生在课室中的位置。"
+      "ATLAS 利用 iBeacon 技术，通过蓝牙讯号准确识别学生在课室中的位置。"
   },
   section5: {
     leading: "主要负责大学",

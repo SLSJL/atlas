@@ -40,24 +40,32 @@
       </div>
     </form>
     <div class="contact-msg">
-      <div class="mail-tel">
-        <p>
-          <span>
-            {{$t('message.aboutus.line5')[0]}}:
-            <a
-              href="mailto:atlas@polyu.edu.hk"
-            >atlas@polyu.edu.hk</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;{{$t('message.aboutus.line5')[1]}}: 852-27664655
-          </span>
-        </p>
-        <p>
-          <span>
-            <a
-              href="mailto:atlas@polyu.edu.hk"
-            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lswong@polyu.edu.hk</a>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;852-34008959
-          </span>
-        </p>
+      <div class="contact-wrap">
+        <div class="contact-item">
+          <p>
+            <span class="name">{{$t('message.aboutus.line5')[0]}}</span>
+            <span class="value">
+              <a href="mailto:atlas@polyu.edu.hk">atlas@polyu.edu.hk</a>
+            </span>
+          </p>
+          <p>
+            <span class="name">{{$t('message.aboutus.line5')[1]}}</span>
+            <span class="value">852-27664655</span>
+          </p>
+        </div>
+
+        <div class="contact-item">
+          <p>
+            <span class="name empty"></span>
+            <span class="value">
+              <a href="mailto:atlas@polyu.edu.hk">lswong@polyu.edu.hk</a>
+            </span>
+          </p>
+          <p>
+            <span class="name empty"></span>
+            <span class="value">852-34008959</span>
+          </p>
+        </div>
       </div>
 
       <button @click="saveMsg">{{$t('message.aboutus.line5')[2]}}</button>
@@ -160,15 +168,26 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    p {
-      span {
-        margin-right: 30px;
-        font-size: 1.4rem;
+
+    .contact-wrap {
+      display: flex;
+      font-size: 1.2rem;
+      .name {
+        display: inline-block;
+        width: 4.5rem;
+        text-align: left;
+        font-weight: 600;
       }
-      a {
-        text-decoration: none;
+      .empty {
+        width: 0;
+      }
+      .value {
+        display: inline-block;
+        width: 12rem;
+        text-align: left;
       }
     }
+
     button {
       width: 120px;
       background-color: #314a7f;
@@ -242,15 +261,6 @@ export default {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      p {
-        span {
-          margin-right: 30px;
-          font-size: 1.4rem;
-        }
-        a {
-          text-decoration: none;
-        }
-      }
 
       button {
         width: 12rem;
@@ -329,10 +339,10 @@ export default {
       width: 100%;
       overflow: auto;
 
-      .mail-tel {
+      .contact-wrap {
         width: 100%;
         margin: 0.5rem 0;
-        // display: none;
+        display: flex;
       }
 
       p {
