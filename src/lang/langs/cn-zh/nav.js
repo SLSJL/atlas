@@ -25,5 +25,5 @@ export default {
       route: "/contactus"
     }
   ],
-  teachLogin: "教師登入"
+  teachLogin: "教师登入"
 };
