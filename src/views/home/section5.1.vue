@@ -2,7 +2,7 @@
   <div class="contianer-fluid senction-51">
     <video
       class="video-top"
-      src="http://158.132.186.221:9001/file/video/promotion-video.mp4"
+      src="./../../assets/vid/promo.mp4"
       controls
     >Your browser does not support the video.</video>
   </div>
