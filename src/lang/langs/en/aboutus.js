@@ -14,5 +14,5 @@ export default {
   line4: {
     placeholder: "Please input more detail"
   },
-  line5: ["E-mali", "Tel", "Submit"]
+  line5: ["E-mail", "Tel", "Submit"]
 };

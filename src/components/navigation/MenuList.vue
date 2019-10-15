@@ -64,7 +64,7 @@ export default {
         this.showNotice = true;
       } else {
         // PC端操作
-        window.location.href = "https://google.com.hk";
+        window.location.href = "https://portal.atlas-learn.com/";
       }
     },
     closeNotice() {
